@@ -1,0 +1,63 @@
+<html>
+	<head>
+			<title>Desafio 02</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="css/estilo.css">
+	</head>
+		<body>
+			<div class="main">
+				<div class="form_box">
+					<h1> Cadastro</h1>
+					<p>Registre seus dados:</p>
+					<form action="php/informacoes_post.php" method="post">
+							<div class="f_line">
+									<input type="text" id="i_name" name="nome" placeholder="Nome completo" required> 										  						
+							</div>
+							<div class="f_line">
+								<input type="text" id="i_apelido" name="apelido" placeholder="Como gosta de ser chamado(a)" required>
+							</div>
+                            <div class="f_line">
+								<input type="date" id="i_data" name="data" placeholder="Qual sua data de nascimento?" required>
+							</div>
+                            <div class="f_line">
+								<input type="text" id="i_vestibular" name="vestibular" placeholder="Qual vestibular você prentende fazer?" required>
+							</div>
+							<div class="f_line">
+								<!--<label> Qual seu vestibular: </label>
+									<select>
+											<option>Nenhum</option>
+											<option>ENEM</option>
+											<option>UNB</option>
+											<option>1°E PAS</option>
+											<option>2°E PAS</option>
+											<option>3°E PAS</option>
+											<option>FUVEST</option>
+											<option>Outro</option>
+									</select>
+							</div>-->
+							<div class="f_line">
+                                <input type="text" id="i_genero" name="genero" placeholder="Gênero" required>
+                            </div>
+						<div class="f_line">
+							<input type="text" id="i_email" name="email" placeholder="Email" required>
+						</div>
+						<div class="f_line">
+							<input type="password" id="i_senha" name="senha" placeholder="Senha" required>
+
+						</div>
+								
+							<div class="f_line">
+								<span>
+								<button onclick="validar()" id="btt_f">Cadastrar</button>
+								</span>	
+																										
+							</div>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</body>
+				
+				
+</html>
